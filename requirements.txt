@@ -1,0 +1,13 @@
+pdfplumber
+lxml
+python-dotenv
+google-genai
+langgraph
+mysql-connector-python
+python-pptx
+fastapi
+uvicorn
+pymysql
+python-multipart
+requests
+chromadb

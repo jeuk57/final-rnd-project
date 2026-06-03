@@ -1,0 +1,23 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 실행 산출물
+outputs/
+output/
+parsing/
+data/
+*.pptx
+*.pdf
+
+# 로컬/IDE
+.vscode/
+.idea/
+.DS_Store
+
+# 테스트/캐시
+.pytest_cache/
+.mypy_cache/
