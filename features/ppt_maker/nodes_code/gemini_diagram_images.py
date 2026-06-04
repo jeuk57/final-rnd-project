@@ -120,61 +120,14 @@ BOXES_INFRA_ICONS: List[Tuple[float, float, float, float]] = [
     (0.749512, 0.937080, 0.083000, 0.035000),
 ]
 
-LABELS_SERVICE: List[str] = [
-    "\ud1b5\ud569 \uc6b4\uc601\n\ud50c\ub7ab\ud3fc",
-    "\uc608\uce21 \uacb0\uacfc\n\uc2dc\uac01\ud654",
-    "\ud574\uc591 \ud658\uacbd\n\uc608\uce21 \uc11c\ube44\uc2a4",
-    "\uc815\ucc45 \uc758\uc0ac\uacb0\uc815 \uc9c0\uc6d0",
-    "\ub370\uc774\ud130 \uc81c\uacf5 \ubc0f\n\uad6d\uc81c\uacf5\uc720",
-]
-LABELS_MODEL: List[str] = [
-    "\uc804\uc9c0\uad6c\n\ud574\uc591\uae30\ud6c4\ubaa8\ub378",
-    "\uc9c0\uc5ed \uc0c1\uc138\n\uc608\uce21\ubaa8\ub378",
-    "\uadf9\uc9c0 \ud658\uacbd\n\uc608\uce21\ubaa8\ub378",
-    "\ud574\uc591\uc0dd\ud0dc\uacc4 \ubaa8\ub378",
-    "\uc790\ub8cc\ub3d9\ud654\n\uc2dc\uc2a4\ud15c(EnKF)",
-    "\uc559\uc0c1\ube14 \uc608\uce21 \ubc0f\n\ubd88\ud655\uc2e4\uc131 \ubd84\uc11d",
-]
-LABELS_PROCESS: List[str] = [
-    "\ub370\uc774\ud130 \uc804\ucc98\ub9ac",
-    "\uaca9\uc790 \ubcc0\ud658 \ubc0f \ubcf4\uac04",
-    "\ubaa8\ub378 \uc785\ub825 \uc0dd\uc131",
-    "\ub2e4\uc6b4\uc2a4\ucf00\uc77c\ub9c1 \ucc98\ub9ac",
-    "\uacb0\uacfc \ud6c4\ucc98\ub9ac",
-]
-LABELS_DATA: List[str] = [
-    "\ud574\uc591 \uad00\uce21\n\ub370\uc774\ud130",
-    "\uc704\uc131 \uad00\uce21 \uc790\ub8cc",
-    "\uadf9\uc9c0 \uad00\uce21 \uc790\ub8cc",
-    "\uc7ac\ubd84\uc11d \ub370\uc774\ud130",
-    "\uc678\ubd80 \uae30\ud6c4\n\ub370\uc774\ud130",
-    "\ud488\uc9c8\uad00\ub9ac(QC)",
-]
-
-LABELS_USERS: List[str] = [
-    "\uc815\ubd80\u00b7\uc815\ucc45\uae30\uad00",
-    "\uc5f0\uad6c\uc790\u00b7\uc804\ubb38\uac00",
-    "\uc0b0\uc5c5\uccb4\u00b7\ud604\uc7a5\uae30\uad00",
-    "\uad6d\ubbfc\u00b7\uc77c\ubc18\uc0ac\uc6a9\uc790",
-]
-
-LABELS_DATA_ICONS: List[str] = [
-    "\ud574\uc591 \uad00\uce21",
-    "\uc704\uc131 \uc790\ub8cc",
-    "\uadf9\uc9c0 \uad00\uce21",
-    "\uc7ac\ubd84\uc11d \uc790\ub8cc",
-    "\uc678\ubd80 \uae30\ud6c4\ub370\uc774\ud130",
-    "\ud488\uc9c8\uad00\ub9ac(QC)",
-]
-
-LABELS_INFRA_ICONS: List[str] = [
-    "\uc288\ud37c\ucef4\ud4e8\ud305",
-    "\uc5f0\uc0b0 \uc11c\ubc84",
-    "\ud074\ub77c\uc6b0\ub4dc",
-    "\uc5f0\uad6c \ub124\ud2b8\uc6cc\ud06c",
-    "\ubcf4\uc548\u00b7\uc811\uadfc\ud1b5\uc81c",
-    "\ud1b5\ud569 DB",
-]
+# 시스템 아키텍처는 고정 배경 이미지만 사용하고 라벨 오버레이는 비활성화
+LABELS_SERVICE: List[str] = []
+LABELS_MODEL: List[str] = []
+LABELS_PROCESS: List[str] = []
+LABELS_DATA: List[str] = []
+LABELS_USERS: List[str] = []
+LABELS_DATA_ICONS: List[str] = []
+LABELS_INFRA_ICONS: List[str] = []
 
 def _norm(s: Any) -> str:
     return re.sub(r"\s+", " ", str(s or "")).strip()
